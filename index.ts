@@ -1,6 +1,15 @@
-type VietnamDistributedMobile = {code: string, blocks: string[], m2m?: boolean}
-type VietnamMobileProvider = {
-  brand: string
+export type VietnamMobileBrand =
+| 'MobiFone'
+| 'Vinaphone'
+| 'Viettel Mobile'
+| 'Vietnamobile'
+| 'Gmobile'
+| 'I-Telecom'
+| 'REDDI'
+
+export type VietnamDistributedMobile = {code: string, blocks: string[], m2m?: boolean}
+export type VietnamMobileProvider = {
+  brand: VietnamMobileBrand
   mcc: string
   mnc: string
 }
